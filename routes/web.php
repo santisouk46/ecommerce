@@ -4,11 +4,15 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
+use App\Http\Controllers\AdminController;
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/view_catagory', [AdminController::class, 'view_catagory']);
+Route::post('/add_catagory', [AdminController::class, 'add_catagory']);
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
 Route::middleware([

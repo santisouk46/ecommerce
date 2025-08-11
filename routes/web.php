@@ -12,6 +12,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/view_catagory', [AdminController::class, 'view_catagory']);
+Route::get('/delete_catagory/{id}', [AdminController::class, 'delete_catagory']);
 Route::post('/add_catagory', [AdminController::class, 'add_catagory']);
 Route::get('/redirect', [HomeController::class, 'redirect']);
 

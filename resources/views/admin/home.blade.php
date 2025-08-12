@@ -13,7 +13,7 @@
      @include('admin.header') 
       
         <!-- partial -->
-     @include('admin.body') 
+    @include('admin.body')
         
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
